@@ -19,15 +19,14 @@ export const AppBar = () => {
                 <nav className={css.nav}>
                     <ul className={css.list}>
 
+                        <li>
+                            <NavLink className={css.item} to='/' end>Home</NavLink>
+                        </li>
+
                         {isLoggedIn &&
-                            <>
-                                <li>
-                                    <NavLink className={css.item} to='/' end>Home</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink className={css.item} to='/contacts' end>Contacts</NavLink>
-                                </li>
-                            </>
+                            <li>
+                                <NavLink className={css.item} to='/contacts' end>Contacts</NavLink>
+                            </li>
                         }
 
                         {!isLoggedIn &&
