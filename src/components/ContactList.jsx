@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { ItemListContact } from './ItemListContact';
-
 import { selectFilteredContacts, selectIsLoading, selectError } from 'redux/contacts/selectorsContacts';
 import { getContactsThunk } from 'redux/contacts/thunksContacts';
 import { selectIsLoggedIn, selectUserToken } from 'redux/authorization/selectorsAuth';
+
+import { ItemListContact } from './ItemListContact';
 
 export const ContactList = () => {
 

@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import { logInThunk } from 'redux/authorization/thunksAuth';
 
-// export const Login = () => { 
 const Login = () => { 
     const dispatch = useDispatch();
     const [email, setEmail] = useState('');

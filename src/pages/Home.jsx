@@ -4,7 +4,6 @@ import { selectUserName, selectUserEmail, selectIsLoggedIn, selectUserToken } fr
 import { selectContacts } from 'redux/contacts/selectorsContacts';
 import { getContactsThunk } from 'redux/contacts/thunksContacts';
 
-// export const Home = () => {
 const Home = () => { 
     const dispatch = useDispatch();
     const userName = useSelector(selectUserName);

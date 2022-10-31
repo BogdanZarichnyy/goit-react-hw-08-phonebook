@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -48,3 +49,11 @@ export const ItemListContact = ({ contact: { id, name, number } }) => {
         </li>
     )
 }
+
+ItemListContact.protoTypes = {
+    contact: PropTypes.objectOf({
+        id: PropTypes.string,
+        name: PropTypes.string,
+        number: PropTypes.string,
+    }),
+};

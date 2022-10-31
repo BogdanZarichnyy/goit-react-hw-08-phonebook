@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { registerThunk } from 'redux/authorization/thunksAuth';
 
-// export const Registration = () => { 
 const Registration = () => { 
     const dispatch = useDispatch();
     const [name, setName] = useState('');
