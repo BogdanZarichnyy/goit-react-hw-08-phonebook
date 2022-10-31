@@ -1,24 +1,17 @@
-// import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { AppBar } from "./AppBar/AppBar";
-import { Home } from "pages/Home/Home";
-import { Contacts } from "pages/Contacts/Contacts";
-import { Login } from "pages/Login/Login";
-import { Registration } from "pages/Registration/Registration";
-import { PageNotFound } from "pages/PageNotFound/PageNotFound";
-
-// const AppBar = lazy(() => import('./AppBar/AppBar'));
-// const Home = lazy(() => import('../pages/Home/Home'));
-// const Contacts = lazy(() => import('../pages/Contacts/Contacts'));
-// const Login = lazy(() => import('../pages/Login/Login'));
-// const Register = lazy(() => import('../pages/Register/Register'));
-// const PageNotFound = lazy(() => import('../pages/PageNotFound/PageNotFound'));
-
 import { selectIsLoggedIn, selectUserToken } from "redux/authorization/selectorsAuth";
 import { getCurrentUserInfoThunk } from "redux/authorization/thunksAuth";
+
+const AppBar = lazy(() => import('./AppBar'));
+const Home = lazy(() => import('../pages/Home'));
+const Contacts = lazy(() => import('../pages/Contacts'));
+const Login = lazy(() => import('../pages/Login'));
+const Registration = lazy(() => import('../pages/Registration'));
+const PageNotFound = lazy(() => import('../pages/PageNotFound'));
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -33,7 +26,7 @@ export const App = () => {
 
     return (
         <Routes>
-            <Route path="/" element={<AppBar />}>
+            <Route path="/" element={<Suspense fallback={<p className="text-2xl text-red-400 font-sm mb-4">Loading data...</p>}><AppBar /></Suspense>}>
                 <Route index element={<Home />} />
                 <Route path="contacts" element={<Contacts />} />
                 <Route path="login" element={<Login />} />

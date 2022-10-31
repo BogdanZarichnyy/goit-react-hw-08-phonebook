@@ -4,7 +4,8 @@ import { selectUserName, selectUserEmail, selectIsLoggedIn, selectUserToken } fr
 import { selectContacts } from 'redux/contacts/selectorsContacts';
 import { getContactsThunk } from 'redux/contacts/thunksContacts';
 
-export const Home = () => { 
+// export const Home = () => {
+const Home = () => { 
     const dispatch = useDispatch();
     const userName = useSelector(selectUserName);
     const userEmail = useSelector(selectUserEmail);
@@ -21,16 +22,18 @@ export const Home = () => {
     
     return (
         <>
-            <p>Welcome</p>
+            <p className="text-3xl font-bold underline text-center m-5">Welcome</p>
 
             {isLoggedIn &&
-                <>
-                    <p>Welcome {userName}</p>
-                    <p>Your's E-mail address: {userEmail}</p>
-                    <p>Your's contacts in database: {userContacts.length}</p>
-                </>
+                <div className='rounded-xl border-2 border-solid border-black p-5 bg-green-300'>
+                    <p className='py-1 font-sm font-normal text-2xl'>Welcome <span className='font-bold'>{userName}</span></p>
+                    <p className='py-1 font-sm font-normal text-2xl'>Your's E-mail address: <span className='font-bold'>{userEmail}</span></p>
+                    <p className='py-1 font-sm font-normal text-2xl'>Your's contacts in database: <span className='font-bold'>{userContacts.length}</span></p>
+                </div>
             }
 
         </>
     )
 }
+
+export default Home;
