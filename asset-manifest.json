@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.bd934952.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.b76f5969.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.1f99365b.js",
     "static/js/831.3dcc80fb.chunk.js": "/goit-react-hw-08-phonebook/static/js/831.3dcc80fb.chunk.js",
     "static/js/415.3083f117.chunk.js": "/goit-react-hw-08-phonebook/static/js/415.3083f117.chunk.js",
-    "static/js/3.c647bbc0.chunk.js": "/goit-react-hw-08-phonebook/static/js/3.c647bbc0.chunk.js",
+    "static/js/3.f1a96504.chunk.js": "/goit-react-hw-08-phonebook/static/js/3.f1a96504.chunk.js",
     "static/js/38.cadd9eee.chunk.js": "/goit-react-hw-08-phonebook/static/js/38.cadd9eee.chunk.js",
     "static/js/451.4b6ea280.chunk.js": "/goit-react-hw-08-phonebook/static/js/451.4b6ea280.chunk.js",
     "static/js/364.edd68a6c.chunk.js": "/goit-react-hw-08-phonebook/static/js/364.edd68a6c.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.bd934952.css.map": "/goit-react-hw-08-phonebook/static/css/main.bd934952.css.map",
-    "main.b76f5969.js.map": "/goit-react-hw-08-phonebook/static/js/main.b76f5969.js.map",
+    "main.1f99365b.js.map": "/goit-react-hw-08-phonebook/static/js/main.1f99365b.js.map",
     "831.3dcc80fb.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/831.3dcc80fb.chunk.js.map",
     "415.3083f117.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/415.3083f117.chunk.js.map",
-    "3.c647bbc0.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/3.c647bbc0.chunk.js.map",
+    "3.f1a96504.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/3.f1a96504.chunk.js.map",
     "38.cadd9eee.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/38.cadd9eee.chunk.js.map",
     "451.4b6ea280.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/451.4b6ea280.chunk.js.map",
     "364.edd68a6c.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/364.edd68a6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd934952.css",
-    "static/js/main.b76f5969.js"
+    "static/js/main.1f99365b.js"
   ]
 }
